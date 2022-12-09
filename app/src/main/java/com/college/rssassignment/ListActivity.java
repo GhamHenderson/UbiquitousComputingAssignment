@@ -90,14 +90,18 @@ public class ListActivity extends AppCompatActivity implements MyRecyclerViewAda
             Intent intent = new Intent(ListActivity.this, ConfigActivity.class);
             startActivity(intent);
         });
+
+
         button = findViewById(id.button);
         button.setOnClickListener(e->{
             new BackgroundTask().execute();
-            // backup fileshere to database.
-            
+
+            // backup fileshare to database.
             adapter = new MyRecyclerViewAdapter(this, titles, descriptions, images);
             adapter.setClickListener(this);
             recyclerView.setAdapter(adapter);
+
+
             text.setVisibility(View.GONE);
             label.setVisibility(View.GONE);
         });

@@ -11,7 +11,8 @@ public class MyJobService extends JobService {
     public boolean onStartJob(JobParameters jobParameters) {
         // runs on the main thread, so this Toast will appear
         Toast.makeText(this, "Service Started", Toast.LENGTH_LONG).show();
-
+        //Backup data to firebase
+        
         // returning false means the work has been done, return true if the job is being run asynchronously
         return true;
     }
