@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "237446631187",
+    "project_id": "rssassignment-cd847",
+    "storage_bucket": "rssassignment-cd847.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237446631187:android:4894891de642a7feb254e6",
+        "android_client_info": {
+          "package_name": "com.college.rssassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237446631187-721kkv8tj160se1fmk8mtb4q4jrhghmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqAJP_Z59go2CbBAHQYUmJIXnDA4owtLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237446631187-721kkv8tj160se1fmk8mtb4q4jrhghmg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

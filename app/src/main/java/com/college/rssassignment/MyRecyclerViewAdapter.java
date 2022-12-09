@@ -1,25 +1,36 @@
 package com.college.rssassignment;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.ViewHolder>  {
 
-    private List<String> data;
+    private List<Drawable> imageList;
+    private List<String> title;
+    private List<String> description;
+    private List<String> images;
     private LayoutInflater mInflater;
     private ItemClickListener mClickListener;
 
     // data is passed into the constructor
-    MyRecyclerViewAdapter(Context context, List<String> data) {
+    MyRecyclerViewAdapter(Context context, List<String> title, List<String> descriptions, List<String> images) {
         this.mInflater = LayoutInflater.from(context);
-        this.data = data;
+        this.title = title;
+        this.images = images;
+        this.description = descriptions;
     }
 
     // inflates the row layout from xml when needed
@@ -32,24 +43,35 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     // binds the data to the TextView in each row
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        String animal = data.get(position);
-        holder.myTextView.setText(animal);
+        String titledata = title.get(position);
+        String descriptionData = description.get(position);
+//        Picasso.get()
+//                .load(images.get(position))
+//                .into((Target) imageList.get(position));
+
+        holder.titleView.setText(titledata);
+        holder.descriptionView.setText(descriptionData);
+//        holder.imageView.setBackground((Drawable) imageList);
     }
 
     // total number of rows
     @Override
     public int getItemCount() {
-        return data.size();
+        return title.size();
     }
 
 
     // stores and recycles views as they are scrolled off screen
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView myTextView;
+        TextView titleView;
+        TextView descriptionView;
+        ImageView imageView;
 
         ViewHolder(View itemView) {
             super(itemView);
-            myTextView = itemView.findViewById(R.id.RSSListItem);
+//            imageView = itemView.findViewById(R.id.imageView3);
+            descriptionView = itemView.findViewById(R.id.description);
+            titleView = itemView.findViewById(R.id.RSSListItem);
             itemView.setOnClickListener(this);
         }
 
@@ -61,7 +83,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
 
     // convenience method for getting data at click position
     String getItem(int id) {
-        return data.get(id);
+        return title.get(id);
     }
 
     // allows clicks events to be caught

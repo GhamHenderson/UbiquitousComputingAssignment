@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">RSSAssignment</string>
+    <string name="app_name">RSS Reader</string>
+<string name="listitems">dropDownMenuExample</string>
+<string-array name="selection">
+    <item>1</item>
+    <item>5</item>
+    <item>10</item>
+    <item>15</item>
+</string-array>
 </resources>

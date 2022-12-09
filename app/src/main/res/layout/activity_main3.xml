@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#605E5E"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/LogInHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Log In"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/headerUsername"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:fontFamily="sans-serif-black"
+        android:text="Please Enter Your Email address :" />
+
+    <EditText
+        android:id="@+id/emailLogin"
+        android:layout_width="230dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="youremail@email.com"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="229dp"
+        android:layout_height="29dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:fontFamily="sans-serif-black"
+        android:text="Please Enter your password :" />
+
+    <EditText
+        android:id="@+id/passwordlogin"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="********"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="Registered? " />
+
+</LinearLayout>

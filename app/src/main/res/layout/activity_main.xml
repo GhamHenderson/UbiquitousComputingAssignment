@@ -5,8 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
+    tools:context=".ListActivity"
     >
+
+    <Button
+        android:id="@+id/config"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Settings" />
 
     <TextView
         android:id="@+id/label"
@@ -27,11 +33,13 @@
         android:id="@+id/button"
         android:layout_width="165dp"
         android:layout_height="wrap_content"
-        android:text="Retrieve RSS Data"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:text="Retrieve RSS Data" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="#706D6D" />
+
 </LinearLayout>

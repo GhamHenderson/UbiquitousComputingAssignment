@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8A8A8A"
+    android:orientation="vertical"
+    tools:context=".ConfigActivity">
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#0288D1"
+        android:gravity="center"
+        android:text="Please enter your RSS feed link below" />
+
+    <EditText
+
+        android:id="@+id/rssText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#0288D1"
+        android:ems="10"
+        android:hint="     URL"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="#0288D1"
+        android:gravity="center"
+        android:text="Number of Stories to load" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:background="#0288D1"
+        android:layout_gravity="center"
+        android:spinnerMode="dialog" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Retrieve RSS Data" />
+
+
+</LinearLayout>
