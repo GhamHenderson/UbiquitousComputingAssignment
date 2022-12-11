@@ -10,9 +10,10 @@
 
     <Button
         android:id="@+id/config"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:text="Settings" />
+        android:layout_width="64dp"
+        android:layout_height="31dp"
+        android:background="#B6AFAF"
+        app:icon="@android:drawable/ic_menu_manage" />
 
     <TextView
         android:id="@+id/label"
@@ -29,12 +30,38 @@
         android:ems="10"
         android:inputType="textPersonName" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="165dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Retrieve RSS Data" />
+    <LinearLayout
+        android:id="@+id/linLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="117dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="#Headlines :" />
+
+        <Spinner
+            android:id="@+id/spinnermain"
+            android:layout_width="76dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="#BCBDBC"
+            android:spinnerMode="dialog" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Retrieve RSS Data" />
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvList"

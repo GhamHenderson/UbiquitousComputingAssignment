@@ -3,8 +3,9 @@
 <string name="listitems">dropDownMenuExample</string>
 <string-array name="selection">
     <item>1</item>
+    <item>2</item>
     <item>5</item>
+    <item>8</item>
     <item>10</item>
-    <item>15</item>
 </string-array>
 </resources>

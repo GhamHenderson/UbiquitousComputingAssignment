@@ -45,13 +45,14 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     public void onBindViewHolder(ViewHolder holder, int position) {
         String titledata = title.get(position);
         String descriptionData = description.get(position);
+
 //        Picasso.get()
 //                .load(images.get(position))
 //                .into((Target) imageList.get(position));
 
         holder.titleView.setText(titledata);
         holder.descriptionView.setText(descriptionData);
-//        holder.imageView.setBackground((Drawable) imageList);
+//      holder.imageView.setBackground((Drawable) imageList);
     }
 
     // total number of rows
